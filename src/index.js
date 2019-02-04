@@ -32,7 +32,7 @@ const renderHogs = () => {
       <p>Specialty: ${hog.specialty}</p>
       <p>Highest medal achieved: ${hog.medal}</p>
       <p>Weight as a ratio of hog to LG - 24.7 Cu. Ft. French Door Refrigerator with Thru-the-Door Ice and Water: ${hog.weight}</p>
-      <p>Greased: <input data-id="${hog.id}" class="toggle" id="greased" type="checkbox" ${hog.greased}><br></p>
+      <p>Greased: <input data-id="${hog.id}" class="toggle" id="greased" ${hog.greased ? 'checked' : ''} type="checkbox" ${hog.greased}><br></p>
       <button class="delete" data-id="${hog.id}">Delete</button>`
   })
 
